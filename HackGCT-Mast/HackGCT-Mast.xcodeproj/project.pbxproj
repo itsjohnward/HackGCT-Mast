@@ -17,6 +17,7 @@
 		5574C5491B767E8E00082D48 /* Bites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574C5481B767E8E00082D48 /* Bites.swift */; };
 		55D6B6ED1B764E0300446D2F /* DataMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D6B6EC1B764E0300446D2F /* DataMonitor.m */; };
 		55D6B6EF1B76595D00446D2F /* DataIntrepreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D6B6EE1B76595D00446D2F /* DataIntrepreter.swift */; };
+		775EF4241B76639100461FEF /* Bites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775EF4231B76639100461FEF /* Bites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		55D6B6EB1B764E0300446D2F /* DataMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMonitor.h; sourceTree = "<group>"; };
 		55D6B6EC1B764E0300446D2F /* DataMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMonitor.m; sourceTree = "<group>"; };
 		55D6B6EE1B76595D00446D2F /* DataIntrepreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataIntrepreter.swift; sourceTree = "<group>"; };
+		775EF4231B76639100461FEF /* Bites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		527885961B7645E000D227EA /* HackGCT-Mast */ = {
 			isa = PBXGroup;
 			children = (
+				775EF4231B76639100461FEF /* Bites.swift */,
 				527885991B7645E000D227EA /* AppDelegate.swift */,
 				5278859B1B7645E000D227EA /* ViewController.swift */,
 				5574C5451B76755900082D48 /* Shop.swift */,
@@ -235,7 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+				775EF4241B76639100461FEF /* Bites.swift in Sources */,
+=======
 				5574C5461B76755900082D48 /* Shop.swift in Sources */,
+>>>>>>> d75f8d6758dfb34e6bfef3f5ccc348ede6aaf5cd
 				5278859C1B7645E000D227EA /* ViewController.swift in Sources */,
 				55D6B6ED1B764E0300446D2F /* DataMonitor.m in Sources */,
 				55D6B6EF1B76595D00446D2F /* DataIntrepreter.swift in Sources */,
