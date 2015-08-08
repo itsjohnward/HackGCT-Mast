@@ -32,6 +32,7 @@ class DataInterpreter {
         println("Uploaded Data By Cellular: \(uploadedDataByCellular)")
         println("Downloaded Data By Ceullular: \(downloadedDataByCellular)")
     }
+    
     init() {
         pullData()
     }

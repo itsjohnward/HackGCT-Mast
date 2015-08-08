@@ -17,6 +17,7 @@ class Shop {
             var newSaltines = NSUserDefaults.standardUserDefaults().integerForKey("saltines")
             newSaltines++
             NSUserDefaults.standardUserDefaults().setInteger(newSaltines, forKey: "saltines")
+            bites -= 1024
         }
     }
     
@@ -25,46 +26,52 @@ class Shop {
             var newSaltines = NSUserDefaults.standardUserDefaults().integerForKey("cookie")
             newSaltines++
             NSUserDefaults.standardUserDefaults().setInteger(newSaltines, forKey: "cookie")
+            bites -= (1024 * 512)
         }
     }
     
     func buyBrownie() { // 1 MB
-        if bites > 1048576 {
+        if bites >= 1048576 {
             var newSaltines = NSUserDefaults.standardUserDefaults().integerForKey("brownie")
             newSaltines++
             NSUserDefaults.standardUserDefaults().setInteger(newSaltines, forKey: "brownie")
+            bites -= 1048576
         }
     }
     
     func buyLollipop() { // 216 MB
-        if bites > 1048576 * 216 {
+        if bites >= 1048576 * 216 {
             var newSaltines = NSUserDefaults.standardUserDefaults().integerForKey("lollipop")
             newSaltines++
             NSUserDefaults.standardUserDefaults().setInteger(newSaltines, forKey: "lollipop")
+            bites -= (1048576 * 216)
         }
     }
     
     func buyCottonCandy() { // 512 MB
-        if bites > 1048576 * 512 {
+        if bites >= 1048576 * 512 {
             var newSaltines = NSUserDefaults.standardUserDefaults().integerForKey("cottonCandy")
             newSaltines++
             NSUserDefaults.standardUserDefaults().setInteger(newSaltines, forKey: "cottonCandy")
+            bites -= (1048576 * 512)
         }
     }
     
     func buyLavaCake() { // 1024 MB
-        if bites > 1048576 * 1024 {
+        if bites >= 1048576 * 1024 {
             var newSaltines = NSUserDefaults.standardUserDefaults().integerForKey("lavaCake")
             newSaltines++
             NSUserDefaults.standardUserDefaults().setInteger(newSaltines, forKey: "lavaCake")
+            bites -= (1048576 * 1024)
         }
     }
     
     func buyCremeBrulee() { // 1 GB
-        if bites > 1073741824 {
+        if bites >= 1073741824 {
             var newSaltines = NSUserDefaults.standardUserDefaults().integerForKey("cremeBrulee")
             newSaltines++
             NSUserDefaults.standardUserDefaults().setInteger(newSaltines, forKey: "cremeBrulee")
+            bites -= 1073741824
         }
     }
 }

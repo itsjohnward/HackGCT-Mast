@@ -31,19 +31,19 @@ class Bites {
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
-    var maxPerDay: Double = NSUserDefaults.standardUserDefaults().integerForKey("maxPerDay") {
+    var maxPerDay: Int = NSUserDefaults.standardUserDefaults().integerForKey("maxPerDay") {
         didSet {
             NSUserDefaults.standardUserDefaults().setInteger(maxPerDay, forKey:"maxPerDay")
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
-    var maxThisDay: Double = NSUserDefaults.standardUserDefaults().integerForKey("maxThisDay") {
+    var maxThisDay: Int = NSUserDefaults.standardUserDefaults().integerForKey("maxThisDay") {
         didSet {
             NSUserDefaults.standardUserDefaults().setInteger(maxThisDay, forKey:"maxThisDay")
             NSUserDefaults.standardUserDefaults().synchronize()
         }
     }
-    var carryOver: Double = NSUserDefaults.standardUserDefaults().integerForKey("carryOver") {
+    var carryOver: Int = NSUserDefaults.standardUserDefaults().integerForKey("carryOver") {
         didSet {
             NSUserDefaults.standardUserDefaults().setInteger(carryOver, forKey:"carryOver")
             NSUserDefaults.standardUserDefaults().synchronize()
@@ -64,11 +64,11 @@ class Bites {
     var dataChecker: DataInterpreter = DataInterpreter()
     var date = NSDate()
     var calendar = NSCalendar.currentCalendar()
-    var compontents = NSCalendar.currentCalendar().components
+//    var compontents = NSCalendar.currentCalendar().components(<#unitFlags: NSCalendarUnit#>, fromDate: <#NSDate#>)
     
     func assignMonthlyDataGB(data: Int) {
         monthlyDataPlanMB = data * 1024
-        maxPerDay = monthlyDataPlanMB / date.description
+//        maxPerDay = monthlyDataPlanMB / date.description
     }
     
     func endOfDayUpdate() {
