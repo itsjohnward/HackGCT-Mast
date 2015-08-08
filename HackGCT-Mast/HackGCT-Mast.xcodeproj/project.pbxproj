@@ -13,6 +13,7 @@
 		527885A11B7645E000D227EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527885A01B7645E000D227EA /* Images.xcassets */; };
 		527885A41B7645E000D227EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527885A21B7645E000D227EA /* LaunchScreen.xib */; };
 		527885B01B7645E000D227EA /* HackGCT_MastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527885AF1B7645E000D227EA /* HackGCT_MastTests.swift */; };
+		527885BA1B764F3400D227EA /* Little-Cute-Pig-Wallpaper-1920x1080.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 527885B91B764F3400D227EA /* Little-Cute-Pig-Wallpaper-1920x1080.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		527885A91B7645E000D227EA /* HackGCT-MastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HackGCT-MastTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		527885AE1B7645E000D227EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527885AF1B7645E000D227EA /* HackGCT_MastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackGCT_MastTests.swift; sourceTree = "<group>"; };
+		527885B91B764F3400D227EA /* Little-Cute-Pig-Wallpaper-1920x1080.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Little-Cute-Pig-Wallpaper-1920x1080.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				527885961B7645E000D227EA /* HackGCT-Mast */,
 				527885AC1B7645E000D227EA /* HackGCT-MastTests */,
 				527885951B7645E000D227EA /* Products */,
+				527885B91B764F3400D227EA /* Little-Cute-Pig-Wallpaper-1920x1080.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +197,7 @@
 			files = (
 				5278859F1B7645E000D227EA /* Main.storyboard in Resources */,
 				527885A41B7645E000D227EA /* LaunchScreen.xib in Resources */,
+				527885BA1B764F3400D227EA /* Little-Cute-Pig-Wallpaper-1920x1080.jpg in Resources */,
 				527885A11B7645E000D227EA /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
