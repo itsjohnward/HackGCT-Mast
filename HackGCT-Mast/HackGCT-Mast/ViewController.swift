@@ -13,10 +13,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var money_saved: UILabel!
     @IBOutlet var data_progress: UIView!
     @IBOutlet weak var progress: UIProgressView!
-    var dataLimit = 4.0;
+    var dataLimit = 1.0;
     var data = 0.0;
     @IBOutlet weak var data_label: UILabel!
     let di = DataInterpreter()
+    @IBOutlet weak var data_field: UITextField!
     
     func updateProgress() {
         data = di.getTotalDataUsage()
@@ -33,6 +34,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button(sender: AnyObject) {
+        if (data_field.hidden == false) {
+            dataLimit = Double(data_field.text.toInt()!)
+            data_field.hidden = true;
+            data_label.hidden = false;
+        }
         updateProgress()
     }
     
@@ -41,7 +47,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        updateProgress()
+        //updateProgress()
     }
 
     override func didReceiveMemoryWarning() {

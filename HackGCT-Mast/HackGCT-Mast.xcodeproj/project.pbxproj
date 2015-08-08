@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52709CDA1B768EE30047CE83 /* kawaii1.png in Resources */ = {isa = PBXBuildFile; fileRef = 52709CD71B768EE30047CE83 /* kawaii1.png */; };
+		52709CDB1B768EE30047CE83 /* kawaii2.png in Resources */ = {isa = PBXBuildFile; fileRef = 52709CD81B768EE30047CE83 /* kawaii2.png */; };
+		52709CDC1B768EE30047CE83 /* kawaii3.png in Resources */ = {isa = PBXBuildFile; fileRef = 52709CD91B768EE30047CE83 /* kawaii3.png */; };
 		5278859A1B7645E000D227EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527885991B7645E000D227EA /* AppDelegate.swift */; };
 		5278859C1B7645E000D227EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5278859B1B7645E000D227EA /* ViewController.swift */; };
 		5278859F1B7645E000D227EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5278859D1B7645E000D227EA /* Main.storyboard */; };
@@ -30,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		52709CD71B768EE30047CE83 /* kawaii1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kawaii1.png; sourceTree = "<group>"; };
+		52709CD81B768EE30047CE83 /* kawaii2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kawaii2.png; sourceTree = "<group>"; };
+		52709CD91B768EE30047CE83 /* kawaii3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kawaii3.png; sourceTree = "<group>"; };
 		527885941B7645E000D227EA /* HackGCT-Mast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HackGCT-Mast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		527885981B7645E000D227EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527885991B7645E000D227EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,11 +73,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52709CD61B768EE30047CE83 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				52709CD71B768EE30047CE83 /* kawaii1.png */,
+				52709CD81B768EE30047CE83 /* kawaii2.png */,
+				52709CD91B768EE30047CE83 /* kawaii3.png */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
 		5278858B1B7645E000D227EA = {
 			isa = PBXGroup;
 			children = (
 				527885961B7645E000D227EA /* HackGCT-Mast */,
 				527885AC1B7645E000D227EA /* HackGCT-MastTests */,
+				52709CD61B768EE30047CE83 /* assets */,
 				527885951B7645E000D227EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -216,6 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5278859F1B7645E000D227EA /* Main.storyboard in Resources */,
+				52709CDB1B768EE30047CE83 /* kawaii2.png in Resources */,
+				52709CDA1B768EE30047CE83 /* kawaii1.png in Resources */,
+				52709CDC1B768EE30047CE83 /* kawaii3.png in Resources */,
 				527885A41B7645E000D227EA /* LaunchScreen.xib in Resources */,
 				527885A11B7645E000D227EA /* Images.xcassets in Resources */,
 			);
@@ -373,7 +393,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Zachary_Espiritu/Projects/HackGCT-Mast/HackGCT-Mast/HackGCT-Mast/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/john/Google Drive/projects/HackGCT-Mast/HackGCT-Mast/HackGCT-Mast/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -385,7 +405,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Zachary_Espiritu/Projects/HackGCT-Mast/HackGCT-Mast/HackGCT-Mast/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/john/Google Drive/projects/HackGCT-Mast/HackGCT-Mast/HackGCT-Mast/Bridging-Header.h";
 			};
 			name = Release;
 		};

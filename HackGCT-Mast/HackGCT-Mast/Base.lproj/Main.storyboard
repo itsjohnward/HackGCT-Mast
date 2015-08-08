@@ -45,7 +45,7 @@
                                     <constraint firstAttribute="height" constant="50" id="fpl-YL-JKd"/>
                                 </constraints>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiR-rb-zFk">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiR-rb-zFk">
                                 <rect key="frame" x="42" y="344" width="331" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -60,6 +60,11 @@
                                     <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mxf-YD-OaC"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y4b-iN-yPN">
+                                <rect key="frame" x="91" y="355" width="97" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -72,7 +77,9 @@
                             <constraint firstItem="TQm-l2-ePy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="Ecm-c8-avq"/>
                             <constraint firstItem="TQm-l2-ePy" firstAttribute="centerX" secondItem="O51-7c-Dcd" secondAttribute="centerX" id="FQl-Jv-5aR"/>
                             <constraint firstItem="l91-RQ-4k7" firstAttribute="top" secondItem="TQm-l2-ePy" secondAttribute="bottom" constant="40" id="FRp-wu-472"/>
+                            <constraint firstItem="y4b-iN-yPN" firstAttribute="top" secondItem="BiR-rb-zFk" secondAttribute="top" id="HAt-xw-FtO"/>
                             <constraint firstAttribute="centerX" secondItem="PJ9-Tg-Xwc" secondAttribute="centerX" id="Hw6-fc-1Uy"/>
+                            <constraint firstItem="y4b-iN-yPN" firstAttribute="width" secondItem="BiR-rb-zFk" secondAttribute="width" id="Kvo-SS-dsU"/>
                             <constraint firstItem="TQm-l2-ePy" firstAttribute="centerX" secondItem="eQx-bV-u3s" secondAttribute="centerX" id="LXI-LQ-HIi"/>
                             <constraint firstItem="O51-7c-Dcd" firstAttribute="top" secondItem="BiR-rb-zFk" secondAttribute="bottom" constant="15" id="R02-N2-hxQ"/>
                             <constraint firstItem="eQx-bV-u3s" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="RrD-Pp-GX7"/>
@@ -80,6 +87,7 @@
                             <constraint firstItem="TQm-l2-ePy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="Wtl-sT-5Eb"/>
                             <constraint firstItem="eQx-bV-u3s" firstAttribute="width" secondItem="BiR-rb-zFk" secondAttribute="width" id="aFF-ov-h4n"/>
                             <constraint firstItem="TQm-l2-ePy" firstAttribute="centerX" secondItem="PJ9-Tg-Xwc" secondAttribute="centerX" id="aPr-r9-kq8"/>
+                            <constraint firstItem="y4b-iN-yPN" firstAttribute="height" secondItem="BiR-rb-zFk" secondAttribute="height" id="ai3-Je-rMj"/>
                             <constraint firstItem="TQm-l2-ePy" firstAttribute="centerX" secondItem="l91-RQ-4k7" secondAttribute="centerX" id="axM-6m-q7C"/>
                             <constraint firstItem="eQx-bV-u3s" firstAttribute="height" secondItem="BiR-rb-zFk" secondAttribute="height" id="doE-Ex-Nt4"/>
                             <constraint firstAttribute="centerX" secondItem="TQm-l2-ePy" secondAttribute="centerX" id="hjd-cP-q2e"/>
@@ -90,6 +98,7 @@
                             <constraint firstItem="eQx-bV-u3s" firstAttribute="top" secondItem="otb-IW-vQN" secondAttribute="bottom" constant="19" id="n12-Ai-RiC"/>
                             <constraint firstAttribute="centerX" secondItem="otb-IW-vQN" secondAttribute="centerX" id="roK-k3-w13"/>
                             <constraint firstItem="TQm-l2-ePy" firstAttribute="centerX" secondItem="otb-IW-vQN" secondAttribute="centerX" id="sXL-y1-R7X"/>
+                            <constraint firstItem="y4b-iN-yPN" firstAttribute="centerX" secondItem="BiR-rb-zFk" secondAttribute="centerX" id="xN7-3i-gN3"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -103,6 +112,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="data_field" destination="y4b-iN-yPN" id="bG1-IS-9tG"/>
                         <outlet property="data_label" destination="BiR-rb-zFk" id="v3w-VI-5gx"/>
                         <outlet property="data_progress" destination="8bC-Xf-vdC" id="7ui-rO-JpW"/>
                         <outlet property="progress" destination="eQx-bV-u3s" id="0W6-VE-wR4"/>
