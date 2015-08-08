@@ -16,14 +16,19 @@ class ViewController: UIViewController {
     var dataLimit = 4.0;
     var data = 0.0;
     @IBOutlet weak var data_label: UILabel!
+    let di = DataInterpreter()
     
     @IBAction func button(sender: AnyObject) {
+        data = di.getTotalDataUsage()
         //progressLabel.text = "0%"
-        data++;
         data_label.text = data.description + "/" + dataLimit.description;
-        progress.setProgress((Float)(data/dataLimit), animated: true);
-        if (data > dataLimit) {
+        if (data <= dataLimit) {
+            progress.setProgress((Float)(data/dataLimit), animated: true);
+        }
+        if (data >= dataLimit) {
+            progress.setProgress((Float)(1.0), animated: true);
             progress.progressTintColor = UIColor.redColor();
+            //progress.trackTintColor = UIColor.redColor();
         }
     }
     
