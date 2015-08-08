@@ -32,18 +32,13 @@ class DataInterpreter {
         println("Uploaded Data By Cellular: \(uploadedDataByCellular)")
         println("Downloaded Data By Ceullular: \(downloadedDataByCellular)")
     }
-<<<<<<< HEAD
-
-=======
-    
     init() {
         pullData()
     }
     
->>>>>>> 6fcd473c50b9b868f8d2f9ae560bebe0de7d7e50
     func getTotalDataUsage() -> Double {
         pullData()
-        var cellularDataUsage: Double = (Double(uploadedDataByWifi!) / Double(1073741824)) + (Double(downloadedDataByWifi!) / Double(1073741824))
+        var cellularDataUsage: Double = (Double(uploadedDataByCellular!) / Double(1073741824)) + (Double(downloadedDataByCellular!) / Double(1073741824))
         println(cellularDataUsage);
         
         return cellularDataUsage

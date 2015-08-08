@@ -21,10 +21,17 @@ class Bites {
     
     // MARK: Real Stuff
     
+<<<<<<< HEAD
+    //    var monthlyDataPlanMB: Int = 4 * 1024
+    //    var maxPerDay: Double = 0
+    //    var maxThisDay: Double = 0
+    //    var carryOver: Double = 0
+=======
 //    var monthlyDataPlanMB: Int = 4 * 1024
 //    var maxPerDay: Double = 0
 //    var maxThisDay: Double = 0
 //    var carryOver: Double = 0
+>>>>>>> 64e5c159bef171429791f23ccf896bff2c9b7b3b
     var monthlyDataPlanMB: Int = NSUserDefaults.standardUserDefaults().integerForKey("monthlyDataPlanMB") {
         didSet {
             NSUserDefaults.standardUserDefaults().setInteger(monthlyDataPlanMB, forKey:"monthlyDataPlanMB")
@@ -68,7 +75,11 @@ class Bites {
     
     func assignMonthlyDataGB(data: Int) {
         monthlyDataPlanMB = data * 1024
+<<<<<<< HEAD
+        maxPerDay = monthlyDataPlanMB / date.description
+=======
         maxPerDay = monthlyDataPlanMB / date.
+>>>>>>> 64e5c159bef171429791f23ccf896bff2c9b7b3b
     }
     
     func endOfDayUpdate() {
