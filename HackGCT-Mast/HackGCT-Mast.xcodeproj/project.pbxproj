@@ -14,6 +14,7 @@
 		527885A41B7645E000D227EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527885A21B7645E000D227EA /* LaunchScreen.xib */; };
 		527885B01B7645E000D227EA /* HackGCT_MastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527885AF1B7645E000D227EA /* HackGCT_MastTests.swift */; };
 		5574C5461B76755900082D48 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574C5451B76755900082D48 /* Shop.swift */; };
+		5574C5491B767E8E00082D48 /* Bites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574C5481B767E8E00082D48 /* Bites.swift */; };
 		55D6B6ED1B764E0300446D2F /* DataMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D6B6EC1B764E0300446D2F /* DataMonitor.m */; };
 		55D6B6EF1B76595D00446D2F /* DataIntrepreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D6B6EE1B76595D00446D2F /* DataIntrepreter.swift */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,8 @@
 		527885AE1B7645E000D227EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527885AF1B7645E000D227EA /* HackGCT_MastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackGCT_MastTests.swift; sourceTree = "<group>"; };
 		5574C5451B76755900082D48 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
+		5574C5471B767D6100082D48 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		5574C5481B767E8E00082D48 /* Bites.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bites.swift; sourceTree = "<group>"; };
 		55D6B6DF1B76483300446D2F /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		55D6B6EB1B764E0300446D2F /* DataMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMonitor.h; sourceTree = "<group>"; };
 		55D6B6EC1B764E0300446D2F /* DataMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMonitor.m; sourceTree = "<group>"; };
@@ -89,8 +92,10 @@
 				5278859B1B7645E000D227EA /* ViewController.swift */,
 				5574C5451B76755900082D48 /* Shop.swift */,
 				55D6B6EB1B764E0300446D2F /* DataMonitor.h */,
+				5574C5471B767D6100082D48 /* Bridging-Header.h */,
 				55D6B6EE1B76595D00446D2F /* DataIntrepreter.swift */,
 				55D6B6EC1B764E0300446D2F /* DataMonitor.m */,
+				5574C5481B767E8E00082D48 /* Bites.swift */,
 				5278859D1B7645E000D227EA /* Main.storyboard */,
 				527885A01B7645E000D227EA /* Images.xcassets */,
 				527885A21B7645E000D227EA /* LaunchScreen.xib */,
@@ -235,6 +240,7 @@
 				55D6B6ED1B764E0300446D2F /* DataMonitor.m in Sources */,
 				55D6B6EF1B76595D00446D2F /* DataIntrepreter.swift in Sources */,
 				5278859A1B7645E000D227EA /* AppDelegate.swift in Sources */,
+				5574C5491B767E8E00082D48 /* Bites.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

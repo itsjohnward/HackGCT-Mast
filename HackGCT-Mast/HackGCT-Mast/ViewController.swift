@@ -36,26 +36,18 @@ class ViewController: UIViewController {
         updateProgress()
     }
     
-<<<<<<< HEAD
     var dataInterpreter = DataInterpreter()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        update()
-=======
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         updateProgress()
->>>>>>> 6fcd473c50b9b868f8d2f9ae560bebe0de7d7e50
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-<<<<<<< HEAD
    
     func fetch(completion: () -> Void) {
         println("test")
@@ -69,9 +61,5 @@ class ViewController: UIViewController {
     @IBAction func didTapUpdate(sender: UIButton) {
         fetch { self.update() }
     }
-=======
 
-
->>>>>>> 6fcd473c50b9b868f8d2f9ae560bebe0de7d7e50
 }
-
