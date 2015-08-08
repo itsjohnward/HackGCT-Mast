@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSObject (DataMonitor)
+@interface DataMonitor : NSObject
+
+- (NSArray *)getDataCounters;
 
 @end

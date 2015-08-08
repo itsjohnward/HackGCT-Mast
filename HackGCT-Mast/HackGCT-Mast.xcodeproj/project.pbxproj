@@ -14,6 +14,7 @@
 		527885A41B7645E000D227EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527885A21B7645E000D227EA /* LaunchScreen.xib */; };
 		527885B01B7645E000D227EA /* HackGCT_MastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527885AF1B7645E000D227EA /* HackGCT_MastTests.swift */; };
 		55D6B6ED1B764E0300446D2F /* DataMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D6B6EC1B764E0300446D2F /* DataMonitor.m */; };
+		55D6B6EF1B76595D00446D2F /* DataIntrepreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D6B6EE1B76595D00446D2F /* DataIntrepreter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		55D6B6DF1B76483300446D2F /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		55D6B6EB1B764E0300446D2F /* DataMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMonitor.h; sourceTree = "<group>"; };
 		55D6B6EC1B764E0300446D2F /* DataMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMonitor.m; sourceTree = "<group>"; };
+		55D6B6EE1B76595D00446D2F /* DataIntrepreter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataIntrepreter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				527885991B7645E000D227EA /* AppDelegate.swift */,
 				5278859B1B7645E000D227EA /* ViewController.swift */,
 				55D6B6EB1B764E0300446D2F /* DataMonitor.h */,
+				55D6B6EE1B76595D00446D2F /* DataIntrepreter.swift */,
 				55D6B6EC1B764E0300446D2F /* DataMonitor.m */,
 				5278859D1B7645E000D227EA /* Main.storyboard */,
 				527885A01B7645E000D227EA /* Images.xcassets */,
@@ -221,6 +224,7 @@
 			files = (
 				5278859C1B7645E000D227EA /* ViewController.swift in Sources */,
 				55D6B6ED1B764E0300446D2F /* DataMonitor.m in Sources */,
+				55D6B6EF1B76595D00446D2F /* DataIntrepreter.swift in Sources */,
 				5278859A1B7645E000D227EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "HackGCT-Mast/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Zachary_Espiritu/Projects/HackGCT-Mast/HackGCT-Mast/HackGCT-Mast/Bridging-Header.h";
@@ -362,6 +367,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "HackGCT-Mast/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Zachary_Espiritu/Projects/HackGCT-Mast/HackGCT-Mast/HackGCT-Mast/Bridging-Header.h";
