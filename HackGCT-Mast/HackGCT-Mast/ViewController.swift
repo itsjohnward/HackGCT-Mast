@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+<<<<<<< HEAD
 
     @IBOutlet weak var money_saved: UILabel!
     @IBOutlet var data_progress: UIView!
@@ -27,18 +28,24 @@ class ViewController: UIViewController {
         }
     }
     
+=======
+    
+    var dataInterpreter = DataInterpreter.sharedInstance
+>>>>>>> origin/master
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+<<<<<<< HEAD
         progress.setProgress(0.0, animated: true);
+=======
+        println(dataInterpreter.getTotalDataUsage())
+>>>>>>> origin/master
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
