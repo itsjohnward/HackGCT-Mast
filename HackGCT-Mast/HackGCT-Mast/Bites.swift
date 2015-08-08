@@ -12,9 +12,9 @@ class Bites {
     
     // MARK: Singleton
     
-    class var sharedInstance : DataInterpreter {
+    class var sharedInstance : Bites {
         struct Static {
-            static let instance : DataInterpreter = DataInterpreter()
+            static let instance : Bites = Bites()
         }
         return Static.instance
     }

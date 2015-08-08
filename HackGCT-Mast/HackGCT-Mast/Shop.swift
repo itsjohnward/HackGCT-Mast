@@ -7,8 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
-class Shop {
+class Shop: UIViewController {
+    
+    @IBOutlet weak var data_usage: UILabel!
+    let b = Bites();
     
     var bites = NSUserDefaults.standardUserDefaults().integerForKey("currentFeedingBites")
     
@@ -73,5 +77,13 @@ class Shop {
             NSUserDefaults.standardUserDefaults().setInteger(newSaltines, forKey: "cremeBrulee")
             bites -= 1073741824
         }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        //updateProgress()
+        data_usage.text = "TEST"
+            //String(Bites.sharedInstance.generalUpdate());
     }
 }

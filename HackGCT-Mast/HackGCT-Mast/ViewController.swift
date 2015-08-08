@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var data_label: UILabel!
     let di = DataInterpreter()
     @IBOutlet weak var data_field: UITextField!
+    @IBOutlet weak var main_label: UILabel!
+    let b = Bites()
     
     func updateProgress() {
         data = di.getTotalDataUsage()
@@ -36,6 +38,8 @@ class ViewController: UIViewController {
     @IBAction func button(sender: AnyObject) {
         if (data_field.hidden == false) {
             dataLimit = Double(data_field.text.toInt()!)
+            b.assignMonthlyDataGB(data_field.text.toInt()!)
+            main_label.text = "Data Used";
             data_field.hidden = true;
             data_label.hidden = false;
         }
@@ -48,6 +52,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //updateProgress()
+        main_label.text = "Daily Data Cap";
     }
 
     override func didReceiveMemoryWarning() {
