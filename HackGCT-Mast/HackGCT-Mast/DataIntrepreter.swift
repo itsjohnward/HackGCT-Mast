@@ -10,15 +10,6 @@ import Foundation
 
 class DataInterpreter {
     
-    // MARK: Singleton
-    
-    class var sharedInstance : DataInterpreter {
-        struct Static {
-            static let instance : DataInterpreter = DataInterpreter()
-        }
-        return Static.instance
-    }
-    
     // MARK: Real Stuff
     
     var uploadedDataByWifi: Int?
@@ -41,7 +32,7 @@ class DataInterpreter {
         println("Uploaded Data By Cellular: \(uploadedDataByCellular)")
         println("Downloaded Data By Ceullular: \(downloadedDataByCellular)")
     }
-    
+
     func getTotalDataUsage() -> Double {
         
         var cellularDataUsage: Double = (Double(uploadedDataByCellular!) / Double(1048576)) + (Double(downloadedDataByCellular!) / Double(1048576))
@@ -49,4 +40,5 @@ class DataInterpreter {
         return cellularDataUsage
         
     }
+    
 }

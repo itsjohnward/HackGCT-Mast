@@ -15,8 +15,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        UIApplication.sharedApplication().setMinimumBackgroundFetchInterval(
+            UIApplicationBackgroundFetchIntervalMinimum)
+        
+        switch(String(Array(UIDevice.currentDevice().systemVersion)[0]).toInt()!) {
+        case 7:
+            UIApplication.sharedApplication().registerForRemoteNotificationTypes(
+                UIRemoteNotificationType.Badge |
+                    UIRemoteNotificationType.Sound |
+                    UIRemoteNotificationType.Alert)
+        case 8:
+            let pushSettings: UIUserNotificationSettings = UIUserNotificationSettings(
+                forTypes:
+                UIUserNotificationType.Alert |
+                    UIUserNotificationType.Badge |
+                    UIUserNotificationType.Sound,
+                categories: nil)
+            UIApplication.sharedApplication().registerUserNotificationSettings(pushSettings)
+            UIApplication.sharedApplication().registerForRemoteNotifications()
+        default:
+            break
+        }
+        
         // Override point for customization after application launch.
         return true
+    }
+    
+    // Support for background fetch
+    func application(application: UIApplication, performFetchWithCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        let fetchViewController = ViewController()
+        fetchViewController.fetch {
+            fetchViewController.update()
+            completionHandler(.NewData)
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -39,6 +70,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func application(
+        application: UIApplication,
+        didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData
+        ) {
+            //Process the deviceToken and send it to your server
+    }
+    
+    func application(
+        application: UIApplication,
+        didFailToRegisterForRemoteNotificationsWithError error: NSError
+        ) {
+            //Log an error for debugging purposes, user doesn't need to know
+            NSLog("Failed to get token; error: %@", error) 
     }
 
 
