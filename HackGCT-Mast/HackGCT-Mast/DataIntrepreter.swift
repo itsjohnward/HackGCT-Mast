@@ -42,7 +42,11 @@ class DataInterpreter {
         println("Downloaded Data By Ceullular: \(downloadedDataByCellular)")
     }
     
-    func getDataUsage() {
+    func getTotalDataUsage() -> Double {
+        
+        var cellularDataUsage: Double = (Double(uploadedDataByCellular!) / Double(1048576)) + (Double(downloadedDataByCellular!) / Double(1048576))
+        
+        return cellularDataUsage
         
     }
 }
