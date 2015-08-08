@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var data_label: UILabel!
     let di = DataInterpreter()
     
-    @IBAction func button(sender: AnyObject) {
+    func updateProgress() {
         data = di.getTotalDataUsage()
         //progressLabel.text = "0%"
         data_label.text = data.description + "/" + dataLimit.description;
@@ -32,11 +32,15 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func button(sender: AnyObject) {
+        updateProgress()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        progress.setProgress(0.0, animated: true);
+        updateProgress()
     }
 
     override func didReceiveMemoryWarning() {

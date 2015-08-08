@@ -26,7 +26,7 @@ class DataInterpreter {
     var uploadedDataByCellular: Int?
     var downloadedDataByCellular: Int?
     
-    init() {
+    func pullData() {
         var dataMonitor: DataMonitor = DataMonitor()
         var dataArray = dataMonitor.getDataCounters()
         println(dataArray)
@@ -42,8 +42,12 @@ class DataInterpreter {
         println("Downloaded Data By Ceullular: \(downloadedDataByCellular)")
     }
     
+    init() {
+        pullData()
+    }
+    
     func getTotalDataUsage() -> Double {
-        
+        pullData()
         var cellularDataUsage: Double = (Double(uploadedDataByWifi!) / Double(1073741824)) + (Double(downloadedDataByWifi!) / Double(1073741824))
         println(cellularDataUsage);
         
