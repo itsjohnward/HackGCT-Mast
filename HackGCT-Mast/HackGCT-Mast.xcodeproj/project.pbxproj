@@ -13,6 +13,7 @@
 		527885A11B7645E000D227EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527885A01B7645E000D227EA /* Images.xcassets */; };
 		527885A41B7645E000D227EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527885A21B7645E000D227EA /* LaunchScreen.xib */; };
 		527885B01B7645E000D227EA /* HackGCT_MastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527885AF1B7645E000D227EA /* HackGCT_MastTests.swift */; };
+		55D6B6ED1B764E0300446D2F /* DataMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D6B6EC1B764E0300446D2F /* DataMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,9 @@
 		527885A91B7645E000D227EA /* HackGCT-MastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HackGCT-MastTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		527885AE1B7645E000D227EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527885AF1B7645E000D227EA /* HackGCT_MastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackGCT_MastTests.swift; sourceTree = "<group>"; };
+		55D6B6DF1B76483300446D2F /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		55D6B6EB1B764E0300446D2F /* DataMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMonitor.h; sourceTree = "<group>"; };
+		55D6B6EC1B764E0300446D2F /* DataMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMonitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				527885991B7645E000D227EA /* AppDelegate.swift */,
 				5278859B1B7645E000D227EA /* ViewController.swift */,
+				55D6B6EB1B764E0300446D2F /* DataMonitor.h */,
+				55D6B6EC1B764E0300446D2F /* DataMonitor.m */,
 				5278859D1B7645E000D227EA /* Main.storyboard */,
 				527885A01B7645E000D227EA /* Images.xcassets */,
 				527885A21B7645E000D227EA /* LaunchScreen.xib */,
@@ -91,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				527885981B7645E000D227EA /* Info.plist */,
+				55D6B6DF1B76483300446D2F /* Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5278859C1B7645E000D227EA /* ViewController.swift in Sources */,
+				55D6B6ED1B764E0300446D2F /* DataMonitor.m in Sources */,
 				5278859A1B7645E000D227EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +353,7 @@
 				INFOPLIST_FILE = "HackGCT-Mast/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Zachary_Espiritu/Projects/HackGCT-Mast/HackGCT-Mast/HackGCT-Mast/Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -355,6 +364,7 @@
 				INFOPLIST_FILE = "HackGCT-Mast/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/Zachary_Espiritu/Projects/HackGCT-Mast/HackGCT-Mast/HackGCT-Mast/Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -411,6 +421,7 @@
 				527885B51B7645E000D227EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		527885B61B7645E000D227EA /* Build configuration list for PBXNativeTarget "HackGCT-MastTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +430,7 @@
 				527885B81B7645E000D227EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
