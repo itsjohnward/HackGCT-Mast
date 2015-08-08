@@ -68,7 +68,7 @@ class Bites {
     
     func assignMonthlyDataGB(data: Int) {
         monthlyDataPlanMB = data * 1024
-        maxPerDay = monthlyDataPlanMB / date.description
+        maxPerDay = monthlyDataPlanMB / date.
     }
     
     func endOfDayUpdate() {

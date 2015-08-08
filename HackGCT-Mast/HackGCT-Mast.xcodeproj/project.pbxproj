@@ -13,6 +13,7 @@
 		527885A11B7645E000D227EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527885A01B7645E000D227EA /* Images.xcassets */; };
 		527885A41B7645E000D227EA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 527885A21B7645E000D227EA /* LaunchScreen.xib */; };
 		527885B01B7645E000D227EA /* HackGCT_MastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527885AF1B7645E000D227EA /* HackGCT_MastTests.swift */; };
+		5574C5461B76755900082D48 /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574C5451B76755900082D48 /* Shop.swift */; };
 		55D6B6ED1B764E0300446D2F /* DataMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D6B6EC1B764E0300446D2F /* DataMonitor.m */; };
 		55D6B6EF1B76595D00446D2F /* DataIntrepreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D6B6EE1B76595D00446D2F /* DataIntrepreter.swift */; };
 		775EF4241B76639100461FEF /* Bites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775EF4231B76639100461FEF /* Bites.swift */; };
@@ -39,6 +40,7 @@
 		527885A91B7645E000D227EA /* HackGCT-MastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HackGCT-MastTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		527885AE1B7645E000D227EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527885AF1B7645E000D227EA /* HackGCT_MastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackGCT_MastTests.swift; sourceTree = "<group>"; };
+		5574C5451B76755900082D48 /* Shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		55D6B6DF1B76483300446D2F /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		55D6B6EB1B764E0300446D2F /* DataMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataMonitor.h; sourceTree = "<group>"; };
 		55D6B6EC1B764E0300446D2F /* DataMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataMonitor.m; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				775EF4231B76639100461FEF /* Bites.swift */,
 				527885991B7645E000D227EA /* AppDelegate.swift */,
 				5278859B1B7645E000D227EA /* ViewController.swift */,
+				5574C5451B76755900082D48 /* Shop.swift */,
 				55D6B6EB1B764E0300446D2F /* DataMonitor.h */,
 				55D6B6EE1B76595D00446D2F /* DataIntrepreter.swift */,
 				55D6B6EC1B764E0300446D2F /* DataMonitor.m */,
@@ -174,6 +177,11 @@
 				TargetAttributes = {
 					527885931B7645E000D227EA = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					527885A81B7645E000D227EA = {
 						CreatedOnToolsVersion = 6.4;
@@ -225,7 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				775EF4241B76639100461FEF /* Bites.swift in Sources */,
+=======
+				5574C5461B76755900082D48 /* Shop.swift in Sources */,
+>>>>>>> d75f8d6758dfb34e6bfef3f5ccc348ede6aaf5cd
 				5278859C1B7645E000D227EA /* ViewController.swift in Sources */,
 				55D6B6ED1B764E0300446D2F /* DataMonitor.m in Sources */,
 				55D6B6EF1B76595D00446D2F /* DataIntrepreter.swift in Sources */,
